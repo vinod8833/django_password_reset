@@ -1,5 +1,3 @@
-# accounts/views.py
-
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
@@ -7,12 +5,10 @@ from .forms import SignUpForm, LoginForm, CustomPasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib import messages
 from django.contrib.auth.forms import PasswordResetForm
-from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.exceptions import MultipleObjectsReturned
-from django.core.mail import send_mail  # Import if you are sending emails
+from django.core.mail import send_mail  #
 from django.template.loader import render_to_string
-from django.contrib.auth.forms import PasswordResetForm
 from django.contrib.auth.views import PasswordResetView
 from django.contrib.auth.tokens import default_token_generator
 from django.utils.http import urlsafe_base64_encode
@@ -84,7 +80,6 @@ def logout_view(request):
 
 
 
-# accounts/views.py
 
 
 
